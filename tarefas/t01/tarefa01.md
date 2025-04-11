@@ -13,3 +13,5 @@
 [Questão 04](./tarefa01-q04.sql)
 
 [Questão 07](./tarefa01-q07.sql)
+
+[Questão 10](./tarefa01-q10.sql)
