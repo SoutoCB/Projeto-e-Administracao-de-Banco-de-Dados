@@ -103,3 +103,35 @@ Resultado:
 |1|Maria|2|DCT|
 |2|João|1|DHC|
 |2|João|2|DCT|
+
+## Um pouco sobre Windows Functions no PostgreSQL
+
+Permitem realizar cálculos sobre um conjunto de linhas relacionado, sem agrupar os resultados. 
+
+**Windows Functions mais usadas:**
+
+1. **`ROW_NUMBER()`**: Atribui um número único e sequencial para cada linha, conforme a ordenação definida.
+    
+2. **`RANK()`**: Atribui uma classificação, considerando empates. Quando há empate, as linhas seguintes recebem números com lacunas.
+    
+3. **`DENSE_RANK()`**: Atribui uma classificação sem lacunas, mesmo com empates.
+    
+4. **`NTILE(n)`**: Divide as linhas em `n` grupos (por exemplo, quartis ou percentis).
+    
+5. **`SUM()`, `AVG()`, `MIN()`, `MAX()`**: Funções de agregação que podem ser usadas como funções de janela para calcular somas, médias, mínimos ou máximos, sem agrupar os dados.
+    
+6. **`LEAD()`**: Acessa o valor de uma linha posterior à linha atual.
+    
+7. **`LAG()`**: Acessa o valor de uma linha anterior à linha atual.
+
+**Sintaxe básica de uma Window Function:**
+```
+SELECT 
+  coluna1,
+  coluna2,
+  window_function() OVER (PARTITION BY coluna_particao ORDER BY coluna_ordem) AS resultado
+FROM tabela;
+
+```   
+
+Essas funções são aplicadas usando a cláusula `OVER()` com opções de **partição** (`PARTITION BY`) e **ordenação** (`ORDER BY`) para determinar o conjunto de dados sobre o qual a função será aplicada.
