@@ -6,3 +6,6 @@
 
 [Povoamento do Esquema Relacional](/tarefas/t01/tarefa01-inserts.sql)
 
+### Questões:
+
+[Questão 01](./tarefa01-q01.sql)
