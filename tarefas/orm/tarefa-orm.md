@@ -1,5 +1,9 @@
 ## Scripts:
 
+[Script ODBC](./scripts/odbc.py)
+
+[Script ORM](./scripts/orm.py)
+
 ## Resumo sobre ODBC
 
 #### ODBC (Open Database Connectivity)

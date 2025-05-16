@@ -1,0 +1,26 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+
+# IDEs e editores
+.vscode/
+*.code-workspace
+.idea/
+
+# Arquivos de ambiente
+.env
+
+# Banco de dados local (caso crie dump)
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Outros
+.DS_Store
